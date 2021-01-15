@@ -14,6 +14,11 @@
   - [Margin and Padding utils](#margin-and-padding-utils)
 - [Content](#content)
   - [Reboot](#reboot)
+- [Components](#components)
+  - [Buttons](#buttons)
+  - [Nav](#nav)
+  - [Navbars](#navbars)
+- [Utilities](#utilities)
 
 ## About The Project
 
@@ -32,3 +37,13 @@
 ### Reboot
 
 Using normalize.css as reboot.
+
+## Components
+
+### Buttons
+
+### Nav
+
+### Navbars
+
+## Utilities
