@@ -19,6 +19,12 @@
   - [Nav](#nav)
   - [Navbars](#navbars)
 - [Utilities](#utilities)
+  - [Borders](#borders)
+  - [Colors](#colors)
+  - [Text](#text)
+  - [Sizing](#sizing)
+  - [Margin and Padding](#margin-and-padding)
+  - [Display](#display)
 
 ## About The Project
 
@@ -47,3 +53,15 @@ Using normalize.css as reboot.
 ### Navbars
 
 ## Utilities
+
+### Borders
+
+### Colors
+
+### Text
+
+### Sizing
+
+### Margin and Padding
+
+### Display
