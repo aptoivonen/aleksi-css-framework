@@ -9,7 +9,6 @@
 - [About the Project](#about-the-project)
 - [Layout](#layout)
   - [Containers](#containers)
-  - [Breakpoints](#breakpoints)
   - [Grid System](#grid-system)
   - [Margin and Padding utils](#margin-and-padding-utils)
 - [Content](#content)
@@ -31,8 +30,6 @@
 ## Layout
 
 ### Containers
-
-### Breakpoints
 
 ### Grid System
 
