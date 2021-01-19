@@ -1,0 +1,40 @@
+%fluid-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container,
+.container-fluid {
+  @extend %fluid-container;
+}
+
+@function breakpoint-infix($name, $width) {
+  @return if($width == 0, "", "-#{$name}");
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  .container-#{$breakpoint} {
+    @extend .container-fluid;
+  }
+
+  @include media-breakpoint-up($breakpoint) {
+    %responsive-container-#{$breakpoint} {
+      max-width: $container-max-width;
+    }
+
+    $extend-breakpoint: true;
+
+    @each $name, $width in $breakpoints {
+      @if ($extend-breakpoint) {
+        .container#{breakpoint-infix($name, $width)} {
+          @extend %responsive-container-#{$breakpoint};
+        }
+
+        @if ($breakpoint == $name) {
+          $extend-breakpoint: false;
+        }
+      }
+    }
+  }
+}
