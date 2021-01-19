@@ -31,7 +31,7 @@
 
 ### Containers
 
-Containers are used to contain and center content. Use them in conjunction with the grid system. Containers are fully responsive.
+Containers are used to contain and center content. Use them in conjunction with the grid system. Containers are designed to be responsive with mobile-first approach. Note that containers have no padding.
 
 - `.container`s set max-width at each breakpoint.
 - `.container-fluid` is 100% wide at all breakpoints.
