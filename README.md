@@ -1,10 +1,4 @@
-<style>
-  table code {
-    white-space: nowrap;
-  }
-</style>
-
-<h3 align="center">Aleksi CSS Framework</h3>
+<h1 align="center">Aleksi CSS Framework</h3>
 
 <p align="center">
   A minimal grid-based CSS framework and a web page realized with it for Odin Project's <a href="https://www.theodinproject.com/lessons/design-your-own-grid-based-framework">HTML and CSS course "Design your own grid-based framework"</a>.
