@@ -56,31 +56,6 @@ A mobile-first, responsive 12-column grid system realized with CSS Grid Layout.
 
 The grid system uses containers, grids and cells to create layout.
 
-<div style="width: 540px;
-  margin-left: auto;
-  margin-right: auto; ">
-  <div style="display: grid; grid-template-columns: repeat(12, 1fr); grid-gap: 30px;">
-    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
-      1. column, 1. row
-    </div>
-    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
-      2. column, 1. row
-    </div>
-    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
-      3. column, 1. row
-    </div>
-    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
-      1. column, 2. row
-    </div>
-    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
-      2. column, 2. row
-    </div>
-    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
-      3. column, 2. row
-    </div>
-  </div>
-</div>
-
 ```
   <div class="container">
     <div class="grid">
@@ -106,7 +81,7 @@ The grid system uses containers, grids and cells to create layout.
   </div>
 ```
 
-The code above creates an equal-width, responsive three-column grid with cells on one row (the example is fixed at the small breakpoint width).
+The code above creates an equal-width, responsive three-column grid with cells on one row.
 
 - Wrap the grid in `.container` class.
 - A grid can have as many items as are needed.
