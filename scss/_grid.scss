@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: $gutter;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+@for $col from 1 through 12 {
+  .cell-#{$col} {
+    grid-column-end: span $col;
+  }
+
+  @if ($col > 1) {
+    .cell-start-#{$col} {
+      grid-column-start: $col;
+    }
+  }
+}
