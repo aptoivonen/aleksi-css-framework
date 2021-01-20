@@ -56,26 +56,65 @@ A mobile-first, responsive 12-column grid system realized with CSS Grid Layout.
 
 The grid system uses containers, grids and cells to create layout.
 
-<style>div {padding: 1rem;}</style>
-<div style="width: 100%;
+<div style="width: 540px;
   margin-left: auto;
-  margin-right: auto; ">1</div>
+  margin-right: auto; ">
+  <div style="display: grid; grid-template-columns: repeat(12, 1fr); grid-gap: 30px;">
+    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
+      1. column, 1. row
+    </div>
+    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
+      2. column, 1. row
+    </div>
+    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
+      3. column, 1. row
+    </div>
+    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
+      1. column, 2. row
+    </div>
+    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
+      2. column, 2. row
+    </div>
+    <div style="grid-column-end: span 4; background: lightblue; padding: 1rem;">
+      3. column, 2. row
+    </div>
+  </div>
+</div>
 
 ```
   <div class="container">
     <div class="grid">
       <div class="cell-4">
-        1
+        1. column, 1. row
       </div>
       <div class="cell-4">
-        2
+        2. column, 1. row
       </div>
       <div class="cell-4">
-        3
+        3. column, 1. row
+      </div>
+      <div class="cell-4">
+        1. column, 2. row
+      </div>
+      <div class="cell-4">
+        2. column, 2. row
+      </div>
+      <div class="cell-4">
+        3. column, 2. row
       </div>
     </div>
   </div>
 ```
+
+The code above creates an equal-width, responsive three-column grid with cells on one row (the example is fixed at the small breakpoint width).
+
+- Wrap the grid in `.container` class.
+- A grid can have as many items as are needed.
+- Use cell classes to create columns on one row. For example, to create three columns, use three `.cell-4` classes indicating that one cell takes 4 columns out of the 12 available.
+- Cells have a 30 pixel gutter between them.
+- To create responsive cells, combine `.cell-{breakpoint}-{columns}` classes, e.g. `.cell-3.cell-md-4`.
+- To align cells, use `.align-items-start`, `.align-items-center`, and `.align-items-end` classes.
+- Create empty columns with `.cell-start-{column-number}`, e.g. to start at column three, use `.cell-start-3`.
 
 ### Margin and Padding utils
 
