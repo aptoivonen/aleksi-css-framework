@@ -1,7 +1,7 @@
 <h1 align="center">Aleksi CSS Framework</h3>
 
 <p align="center">
-  A minimal grid-based CSS framework and a web page realized with it for Odin Project's <a href="https://www.theodinproject.com/lessons/design-your-own-grid-based-framework">HTML and CSS course "Design your own grid-based framework"</a>.
+  Aleksi CSS framework is a minimal grid-based CSS framework. 
 </p>
 
 ## Table of Contents
@@ -27,7 +27,11 @@
 
 ## About The Project
 
+This project includes a CSS framework and a web page realized with it for Odin Project's <a href="https://www.theodinproject.com/lessons/design-your-own-grid-based-framework">HTML and CSS course "Design your own grid-based framework"</a>.
+
 ## Layout
+
+Responsive containers, a 12-column grid system, and spacing utilities are available for laying out a web page.
 
 ### Containers
 
@@ -47,6 +51,31 @@ Containers are used to contain and center content. Use them in conjunction with 
 | `.container-fluid` | 100%                 | 100%           | 100%            | 100%           | 100%                  |
 
 ### Grid System
+
+A mobile-first, responsive 12-column grid system realized with CSS Grid Layout.
+
+The grid system uses containers, grids and cells to create layout.
+
+<style>div {padding: 1rem;}</style>
+<div style="width: 100%;
+  margin-left: auto;
+  margin-right: auto; ">1</div>
+
+```
+  <div class="container">
+    <div class="grid">
+      <div class="cell-4">
+        1
+      </div>
+      <div class="cell-4">
+        2
+      </div>
+      <div class="cell-4">
+        3
+      </div>
+    </div>
+  </div>
+```
 
 ### Margin and Padding utils
 
