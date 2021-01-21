@@ -5,7 +5,11 @@
 @mixin media-breakpoint-up($breakpoint-name) {
   $breakpoint: map-get($breakpoints, $breakpoint-name);
   @if $breakpoint {
-    @media (min-width: $breakpoint) {
+    @if ($breakpoint > 0) {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
       @content;
     }
   }
