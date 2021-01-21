@@ -17,23 +17,19 @@
 }
 
 @for $col from 1 through 12 {
-  .cell-#{$col} {
-    grid-column-end: span $col;
-  }
-
-  @each $breakpoint, $width in $breakpoints {
-    @if ($width > 0) {
-      @include media-breakpoint-up($breakpoint) {
-        .cell-#{$breakpoint}-#{$col} {
-          grid-column-end: span $col;
-        }
-      }
-    }
-  }
-
   @if ($col > 1) {
     .cell-start-#{$col} {
       grid-column-start: $col;
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @for $col from 1 through 12 {
+      .cell#{breakpoint-infix($breakpoint, $width)}-#{$col} {
+        grid-column-end: span $col;
+      }
     }
   }
 }
