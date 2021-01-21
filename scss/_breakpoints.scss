@@ -1,3 +1,7 @@
+@function breakpoint-infix($name, $width) {
+  @return if($width == 0, "", "-#{$name}");
+}
+
 @mixin media-breakpoint-up($breakpoint-name) {
   $breakpoint: map-get($breakpoints, $breakpoint-name);
   @if $breakpoint {

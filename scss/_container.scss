@@ -9,10 +9,6 @@
   @extend %fluid-container;
 }
 
-@function breakpoint-infix($name, $width) {
-  @return if($width == 0, "", "-#{$name}");
-}
-
 @each $breakpoint, $container-max-width in $container-max-widths {
   .container-#{$breakpoint} {
     @extend .container-fluid;
