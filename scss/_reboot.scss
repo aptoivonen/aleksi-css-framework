@@ -29,8 +29,12 @@ html {
 
 body {
   margin: 0;
-  font: $font-size $font-family;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: left;
   background-color: $body-bg;
+  color: $body-color;
 }
 
 /**
@@ -41,14 +45,26 @@ main {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $heading-margin-bottom;
+}
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+p {
+  margin-top: 0;
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* Grouping content
@@ -83,7 +99,14 @@ pre {
  */
 
 a {
+  color: $link-color;
+  text-decoration: none;
   background-color: transparent;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
 }
 
 /**

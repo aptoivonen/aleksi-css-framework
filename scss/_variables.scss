@@ -1,7 +1,12 @@
-$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-size: 1rem !default;
+$primary: #46c3db;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+  ),
+  $theme-colors
+);
 
 $breakpoints: (
   xs: 0,
@@ -41,3 +46,18 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-size: 1rem !default;
+$line-height: 1.5 !default;
+
+$body-bg: white !default;
+$body-color: #212529 !default;
+
+$heading-margin-bottom: $spacer / 2 !default;
+$paragraph-margin-bottom: 1rem !default;
+
+$link-color: theme-color("primary") !default;
+$link-hover-color: darken($link-color, 15%) !default;
