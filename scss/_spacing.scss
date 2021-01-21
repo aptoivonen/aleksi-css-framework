@@ -1,0 +1,64 @@
+$spacing-properties: (
+  m: "margin",
+  p: "padding",
+);
+
+$expanded-spacers: map-merge(
+  $spacers,
+  (
+    auto: "auto",
+  )
+);
+
+$sides: (
+  "": "",
+  l: "left",
+  r: "right",
+  b: "bottom",
+  t: "top",
+  x: "x",
+  y: "y",
+);
+
+@function no-auto-for-padding($spacing-id, $spacer-number) {
+  @return $spacing-id != p or $spacer-number != auto;
+}
+
+@function side-letter-infix($side-letter) {
+  @return if($side-letter == "", "", "-#{$side-letter}");
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $spacing-id, $spacing-property in $spacing-properties {
+      @each $spacer-number, $space in $expanded-spacers {
+        @each $side-id, $side-letter in $sides {
+          @if (no-auto-for-padding($spacing-id, $spacer-number)) {
+            .#{$spacing-id}#{$side-id}#{breakpoint-infix($breakpoint, $width)}-#{$spacer-number} {
+              @if (
+                $side-letter ==
+                  "" or
+                  $side-letter ==
+                  "left" or
+                  $side-letter ==
+                  "right" or
+                  $side-letter ==
+                  "bottom" or
+                  $side-letter ==
+                  "top"
+              ) {
+                #{$spacing-property}#{side-letter-infix($side-letter)}: #{$space};
+              } @else if ($side-letter == "x") {
+                #{$spacing-property}-left: #{$space};
+                #{$spacing-property}-right: #{$space};
+              } @else if ($side-letter == "y") {
+                #{$spacing-property}-top: #{$space};
+                #{$spacing-property}-bottom: #{$space};
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
