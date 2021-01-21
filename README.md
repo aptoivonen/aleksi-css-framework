@@ -94,6 +94,18 @@ The code above creates an equal-width, responsive three-column grid with cells o
 
 ### Margin and Padding utils
 
+Use margin and padding utilities for spacing. `.m-{size}` and `.p-{size}` classes are for all viewport sizes, `.m-{breakpoint}-{size}` and `.p-{breakpoint}-{size}` are responsive. Example: `.mr-md-2` sets `margin-right: .5 \* 1rem;` for the medium and up breakpoint.
+
+| Size letter | margin / padding value |
+| ----------- | ---------------------- |
+| 0           | 0                      |
+| 1           | .25 \* 1rem            |
+| 2           | .5 \* 1rem             |
+| 3           | 1rem                   |
+| 4           | 1.5 \* 1rem            |
+| 5           | 3 \* 1rem              |
+| auto        | auto                   |
+
 ## Content
 
 ### Reboot
