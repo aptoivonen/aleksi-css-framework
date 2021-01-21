@@ -94,16 +94,16 @@ The code above creates an equal-width, responsive three-column grid with cells o
 
 ### Margin and Padding utils
 
-Use margin and padding utilities for spacing. `.m-{size}` and `.p-{size}` classes are for all viewport sizes, `.m-{breakpoint}-{size}` and `.p-{breakpoint}-{size}` are responsive. Example: `.mr-md-2` sets `margin-right: .5 \* 1rem;` for the medium and up breakpoint.
+Use margin and padding utilities for spacing. `.m-{size}` and `.p-{size}` classes are for all viewport sizes, `.m-{breakpoint}-{size}` and `.p-{breakpoint}-{size}` are responsive. Example: `.mr-md-2` sets `margin-right: .5rem;` for the medium and up breakpoint.
 
 | Size letter | margin / padding value |
 | ----------- | ---------------------- |
 | 0           | 0                      |
-| 1           | .25 \* 1rem            |
-| 2           | .5 \* 1rem             |
+| 1           | .25rem                 |
+| 2           | .5rem                  |
 | 3           | 1rem                   |
-| 4           | 1.5 \* 1rem            |
-| 5           | 3 \* 1rem              |
+| 4           | 1.5rem                 |
+| 5           | 3rem                   |
 | auto        | auto                   |
 
 ## Content
@@ -131,5 +131,32 @@ Using normalize.css as reboot.
 ### Sizing
 
 ### Margin and Padding
+
+Margin and padding utilities include responsive options to space content.
+
+The classes use notation as follows: `{property}{side}-{size}` and the responsive versions: `{property}{side}-{breakpoint}-{size}`, where
+
+- property is `m` for `margin` and `p` for `padding`
+- side is one of
+  - `blank` - set size for all sides
+  - `b` - bottom
+  - `t` - top
+  - `l` - left
+  - `r` - right
+  - `x` - right and left
+  - `y` - top and bottom
+- breakpoint is one of
+  - `sm` - small
+  - `md` - medium
+  - `lg` - large
+  - `xl` - extra large
+- size is one of
+  - `0` - 0
+  - `1` - .25rem
+  - `2` - .5rem
+  - `3` - 1rem
+  - `4` - 1.5rem
+  - `5` - 3rem
+  - `auto` - auto
 
 ### Display
