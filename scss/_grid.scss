@@ -21,6 +21,16 @@
     grid-column-end: span $col;
   }
 
+  @each $breakpoint, $width in $breakpoints {
+    @if ($width > 0) {
+      @include media-breakpoint-up($breakpoint) {
+        .cell-#{$breakpoint}-#{$col} {
+          grid-column-end: span $col;
+        }
+      }
+    }
+  }
+
   @if ($col > 1) {
     .cell-start-#{$col} {
       grid-column-start: $col;

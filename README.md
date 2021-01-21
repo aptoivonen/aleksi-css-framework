@@ -87,9 +87,10 @@ The code above creates an equal-width, responsive three-column grid with cells o
 - A grid can have as many items as are needed.
 - Use cell classes to create columns on one row. For example, to create three columns, use three `.cell-4` classes indicating that one cell takes 4 columns out of the 12 available.
 - Cells have a 30 pixel gutter between them.
-- To create responsive cells, combine `.cell-{breakpoint}-{columns}` classes, e.g. `.cell-3.cell-md-4`.
+- To create responsive cells, combine `.cell-{breakpoint}-{column}` classes, e.g. `.cell-3.cell-md-4`.
 - To align cells, use `.align-items-start`, `.align-items-center`, and `.align-items-end` classes.
 - Create empty columns with `.cell-start-{column-number}`, e.g. to start at column three, use `.cell-start-3`.
+- For responsive columns, use `.cell-{breakpoint}-{column}` classes, e.g. `.cell-md-4`.
 
 ### Margin and Padding utils
 
