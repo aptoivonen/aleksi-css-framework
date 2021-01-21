@@ -47,13 +47,13 @@ $sides: (
                   $side-letter ==
                   "top"
               ) {
-                #{$spacing-property}#{side-letter-infix($side-letter)}: #{$space};
+                #{$spacing-property}#{side-letter-infix($side-letter)}: #{$space} !important;
               } @else if ($side-letter == "x") {
-                #{$spacing-property}-left: #{$space};
-                #{$spacing-property}-right: #{$space};
+                #{$spacing-property}-left: #{$space} !important;
+                #{$spacing-property}-right: #{$space} !important;
               } @else if ($side-letter == "y") {
-                #{$spacing-property}-top: #{$space};
-                #{$spacing-property}-bottom: #{$space};
+                #{$spacing-property}-top: #{$space} !important;
+                #{$spacing-property}-bottom: #{$space} !important;
               }
             }
           }
