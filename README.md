@@ -22,7 +22,6 @@
   - [Colors](#colors)
   - [Shadows](#shadows)
   - [Text](#text)
-  - [Sizing](#sizing)
   - [Margin and Padding](#margin-and-padding)
   - [Display](#display)
 
@@ -232,8 +231,6 @@ Change font weight of text to normal or bold:
 Italicize text:
 
 - `.font-style-italic`
-
-### Sizing
 
 ### Margin and Padding
 
