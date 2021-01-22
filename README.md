@@ -149,11 +149,11 @@ Example use case: `<p class="border border-primary">...</p>`.
 
 Make rounded borders:
 
-- `.round`, for example `<p class="border rounded">...</p>`
+- `.rounded`, for example `<p class="border rounded">...</p>`
 
 Remove roundness:
 
-- `.round-0`
+- `.rounded-0`
 
 Make a circle element (width and height equal):
 
