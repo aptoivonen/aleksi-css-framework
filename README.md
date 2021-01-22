@@ -110,13 +110,15 @@ Use margin and padding utilities for spacing. `.m-{size}` and `.p-{size}` classe
 
 ### Reboot
 
-Normalize css normalizes the styles of most elements across browsers.
+Normalize.css normalizes the styles of most elements across browsers.
 
 - Every element and `::before` and `::after` pseudo-elements have been set to `box-sizing: border-box` to easy sizing.
 
 - `body` has `line-height` of 1.5 and `font-size` of 1rem. Global `Font-family` is set to native font stack for optimum text rendering on every device.
 
 - Headings, paragraphs, and lists have had their top margins removed.
+
+- Links have `text-decoration` removed, and `color` set to primary theme color.
 
 ## Components
 
