@@ -207,6 +207,8 @@ Gray backgrounds: `.bg-{gray-level}` classes to use different levels of grays.
 
 ### Shadows
 
+Add drop shadows to components with `.shadow`. Classes `.shadow-sm` and `.shadow-lg` add a small and large shadow, respectively.
+
 ### Text
 
 Use text utilities to style text quickly.
