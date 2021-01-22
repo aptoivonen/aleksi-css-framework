@@ -1,0 +1,15 @@
+$displays: (
+  "none": none,
+  "block": block,
+  "flex": flex,
+);
+
+@each $breakpoint, $width in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $display, $display-value in $displays {
+      .d-#{$display-value}#{breakpoint-infix($breakpoint, $width)} {
+        display: $display-value !important;
+      }
+    }
+  }
+}
