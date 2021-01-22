@@ -1,0 +1,21 @@
+.border {
+  border: $border-width solid $border-color !important;
+}
+
+@each $name, $color in $theme-colors {
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}
+
+.rounded {
+  border-radius: $border-radius !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.circle {
+  border-radius: 50% !important;
+}

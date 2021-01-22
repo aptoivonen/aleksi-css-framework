@@ -133,6 +133,32 @@ Normalize.css normalizes the styles of most elements across browsers.
 
 ### Borders
 
+To style components with borders, or to remove existing borders, use border classes. Additional styling builds on top of stardard border class.
+
+Standard border using a shade of gray:
+
+- `.border`
+
+Contextual border colors:
+
+- `.border-primary`
+- `.border-light`
+- `.border-dark`
+
+Example use case: `<p class="border border-primary">...</p>`.
+
+Make rounded borders:
+
+- `.round`, for example `<p class="border rounded">...</p>`
+
+Remove roundness:
+
+- `.round-0`
+
+Make a circle element (width and height equal):
+
+- `.circle`
+
 ### Colors
 
 Style text and components with colors to indicate semantic meaning or visual hierarchy.
