@@ -20,6 +20,7 @@
 - [Utilities](#utilities)
   - [Borders](#borders)
   - [Colors](#colors)
+  - [Shadows](#shadows)
   - [Text](#text)
   - [Sizing](#sizing)
   - [Margin and Padding](#margin-and-padding)
@@ -134,7 +135,75 @@ Normalize.css normalizes the styles of most elements across browsers.
 
 ### Colors
 
+Style text and components with colors to indicate semantic meaning or visual hierarchy.
+
+Contextual text colors: `.text-{contextual}` classes indicate contextual meaning.
+
+- `.text-primary`
+- `.text-light`
+- `.text-dark`
+
+Gray text: `.text-{gray-level}` classes to use different levels of grays.
+
+- `.text-white`
+- `.text-100`
+- `.text-200`
+- `.text-300`
+- `.text-400`
+- `.text-500`
+- `.text-600`
+- `.text-700`
+- `.text-800`
+- `.text-900`
+- `.text-black`
+
+Use background colors to set components' colors.
+
+Contextual background colors: `.bg-{contextual}` classes indicate contextual meaning.
+
+- `.bg-primary`
+- `.bg-light`
+- `.bg-dark`
+
+Gray backgrounds: `.bg-{gray-level}` classes to use different levels of grays.
+
+- `.bg-white`
+- `.bg-100`
+- `.bg-200`
+- `.bg-300`
+- `.bg-400`
+- `.bg-500`
+- `.bg-600`
+- `.bg-700`
+- `.bg-800`
+- `.bg-900`
+- `.bg-black`
+
+### Shadows
+
 ### Text
+
+Use text utilities to style text quickly.
+
+Alignment classes to align text left, center, or right:
+
+- `.text-left`
+- `.text-center`
+- `.text-right`
+
+Text transforms to make uppercase or capitalized text:
+
+- `.text-uppercase`
+- `.text-capitalize`
+
+Change font weight of text to normal or bold:
+
+- `.font-weight-normal`
+- `.font-weight-bold`
+
+Italicize text:
+
+- `.font-style-italic`
 
 ### Sizing
 
