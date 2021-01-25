@@ -125,6 +125,13 @@ Normalize.css normalizes the styles of most elements across browsers.
 
 ### Buttons
 
+Style buttons using custom button styles. Styles include:
+
+- Primary `.btn .btn-primary`
+- Secondary `.btn .btn-secondary`
+- Dark `.btn .btn-dark`
+- Light `.btn .btn-light`
+
 ### Nav
 
 ### Navbars
