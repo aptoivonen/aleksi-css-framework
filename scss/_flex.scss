@@ -1,0 +1,48 @@
+$flex-direction: (
+  row: row,
+  column: column,
+);
+
+$justify-content: (
+  start: start,
+  end: end,
+  center: center,
+  between: space-between,
+);
+
+$align-items: (
+  start: start,
+  end: end,
+  center: center,
+  stretch: stretch,
+);
+
+$flex-wrap: (
+  wrap: wrap,
+  nowrap: nowrap,
+);
+
+@each $breakpoint, $width in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $flex-direction-name, $flex-direction-value in $flex-direction {
+      .flex-#{$flex-direction-name}#{breakpoint-infix($breakpoint, $width)} {
+        flex-direction: $flex-direction-value !important;
+      }
+    }
+    @each $justify-content-name, $justify-content-value in $justify-content {
+      .justify-content#{breakpoint-infix($breakpoint, $width)}-#{$justify-content-name} {
+        justify-content: $justify-content-value !important;
+      }
+    }
+    @each $align-items-name, $align-items-value in $align-items {
+      .align-items#{breakpoint-infix($breakpoint, $width)}-#{$align-items-name} {
+        align-items: $align-items-value !important;
+      }
+    }
+    @each $flex-wrap-name, $flex-wrap-value in $flex-wrap {
+      .flex-wrap#{breakpoint-infix($breakpoint, $width)}-#{$flex-wrap-name} {
+        flex-wrap: $flex-wrap-value !important;
+      }
+    }
+  }
+}
