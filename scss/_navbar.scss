@@ -1,0 +1,76 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: $navbar-padding-y $navbar-padding-x;
+}
+
+.navbar-expand {
+  @each $breakpoint, $width in $breakpoints {
+    $next-breakpoint: next-breakpoint($breakpoint);
+    $breakpoint-infix: breakpoint-infix($breakpoint, $width);
+
+    &#{$breakpoint-infix} {
+      @include media-breakpoint-up($next-breakpoint) {
+        flex-flow: row nowrap;
+        justify-content: start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .nav-link {
+            padding-left: $navbar-nav-link-padding-x;
+            padding-right: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-collapse {
+          display: flex !important;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .nav-link {
+    color: $navbar-nav-link-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-nav-link-hover-color;
+    }
+  }
+}
+
+.navbar-toggler {
+  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  background-color: transparent;
+  border: $border-width solid transparent;
+  border-radius: $border-radius;
+  color: $navbar-toggler-color;
+  border-color: $navbar-toggler-border-color;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: escape-svg($navbar-toggler-icon) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.collapse:not(.show) {
+  display: none;
+}

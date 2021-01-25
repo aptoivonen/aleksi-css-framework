@@ -114,3 +114,16 @@ $btn-focus-box-shadow: 0 0 0 0.2rem rgba(theme-color("primary"), 0.25) !default;
 
 $nav-link-padding-y: 0.5rem !default;
 $nav-link-padding-x: 1rem !default;
+
+$navbar-padding-y: 0.5rem !default;
+$navbar-padding-x: 1rem !default;
+
+$navbar-toggler-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{theme-color('secondary')}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-toggler-padding-y: 0.25rem !default;
+$navbar-toggler-padding-x: 0.75rem !default;
+$navbar-toggler-color: rgba($black, 0.5) !default;
+$navbar-toggler-border-color: transparent !default;
+
+$navbar-nav-link-color: rgba($black, 0.5) !default;
+$navbar-nav-link-hover-color: rgba($black, 0.7) !default;
+$navbar-nav-link-padding-x: 0.5rem !default;

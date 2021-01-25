@@ -14,3 +14,13 @@
     }
   }
 }
+
+@function next-breakpoint($breakpoint) {
+  $breakpoint-names: map-keys($breakpoints);
+  $index: index($breakpoint-names, $breakpoint);
+  @return if(
+    $index != null and $index < length($breakpoint-names),
+    nth($breakpoint-names, $index + 1),
+    null
+  );
+}
