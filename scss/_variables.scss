@@ -29,11 +29,13 @@ $grays: map-merge(
 );
 
 $primary: #cc9543;
+$secondary: #6abfc3;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary": $primary,
+    "secondary": $secondary,
     "light": $gray-100,
     "dark": $gray-800,
   ),
