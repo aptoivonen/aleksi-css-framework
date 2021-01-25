@@ -24,6 +24,7 @@
   - [Text](#text)
   - [Margin and Padding](#margin-and-padding)
   - [Display](#display)
+  - [Flex](#flex)
 
 ## About The Project
 
@@ -262,3 +263,42 @@ The classes use notation as follows: `{property}{side}-{size}` and the responsiv
   - `auto` - auto
 
 ### Display
+
+Toggle display value of elements with the responsive display classes.
+
+Classes that use breakpoints apply effects to all screen sizes up from the breakpoint.
+
+- `d-{value}` for all screen sizes
+- `d-{breakpoint}-{value}` for breakpoint and up
+  where `value` is one of
+- `none`
+- `block`
+- `flex`
+  and `breakpoint` one of
+- `sm`
+- `md`
+- `lg`
+- `xl`
+
+### Flex
+
+Make a container into a flex container with `d-flex` or the responsive `d-{breakpoint}-flex` classes.
+
+Flex direction is controlled by `flex-row`, `flex-column`, and responsive `flex-{breakpoint}-row` and `flex-{breakpoint}-column` classes.
+
+Aligning items on the main axis is controlled by `justify-content-{value}` and `justify-content-{breakpoint}-{value}` classes,
+where `value` is one of
+
+- `start`
+- `center`
+- `end`
+- `between`
+
+Aligning items on the cross axis is controlled by `align-items-{value}` and `align-items-{breakpoint}-{value}` classes, where `value` is one of
+
+- `start`
+- `center`
+- `end`
+- `stretch`
+
+Choose to wrap or not wrap for the flex container with `flex-wrap`, `flex-nowrap`, `flex-{breakpoint}-wrap`, and `flex-{breakpoint}-nowrap`.
