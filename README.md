@@ -134,6 +134,19 @@ Style buttons using custom button styles. Styles include:
 
 ### Nav
 
+Build base nav elements with the `.nav` class.
+
+```
+<ul class="nav">
+  <li>
+    <a class="nav-link" href="#">
+      Home
+    </a>
+  </li>
+</ul>
+
+```
+
 ### Navbars
 
 ## Utilities
