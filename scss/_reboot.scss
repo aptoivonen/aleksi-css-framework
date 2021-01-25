@@ -256,7 +256,8 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-// Add cursor to non-button buttons
+// Add cursor to buttons
+button,
 [role="button"] {
   cursor: pointer;
 }
