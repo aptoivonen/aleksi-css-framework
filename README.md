@@ -149,6 +149,46 @@ Build base nav elements with the `.nav` class.
 
 ### Navbars
 
+The navigation header classes provide a responsive and collapsible navbar.
+
+- wrap everything in `.navbar`
+- `.navbar-expand-{breakpoint}` classes add responsive collapsing
+- `.navbar-nav` for navigation menu
+- `.navbar-toggler` for collapse toggling
+- `.collapse.navbar-collapse` for hiding navbar contents by parent breakpoint
+
+```
+<nav class="navbar navbar-expand-sm bg-light">
+  <a href="#">Navbar</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+```
+
+An example of a navbar with components, using a small breakpoint.
+
 ## Utilities
 
 ### Borders
