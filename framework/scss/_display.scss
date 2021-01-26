@@ -7,7 +7,7 @@ $displays: (
 @each $breakpoint, $width in $breakpoints {
   @include media-breakpoint-up($breakpoint) {
     @each $display, $display-value in $displays {
-      .d-#{$display-value}#{breakpoint-infix($breakpoint, $width)} {
+      .d#{breakpoint-infix($breakpoint, $width)}-#{$display-value} {
         display: $display-value !important;
       }
     }
