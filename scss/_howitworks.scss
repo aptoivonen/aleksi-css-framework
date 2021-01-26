@@ -1,0 +1,19 @@
+.hiw-img {
+  height: 80px;
+}
+
+@include media-breakpoint-up(sm) {
+  .hiw-img {
+    height: 120px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .hiw-img {
+    height: 165px;
+  }
+}
+
+.mw-53ch {
+  max-width: 53ch;
+}
