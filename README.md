@@ -1,7 +1,7 @@
 <h1 align="center">Aleksi CSS Framework</h3>
 
 <p align="center">
-  Aleksi CSS framework is a minimal grid-based CSS framework. 
+  Aleksi CSS framework is a minimal grid-based CSS framework based on Bootstrap. It uses CSS Grid instead of Flexbox for laying out the grid.
 </p>
 
 ## Table of Contents
