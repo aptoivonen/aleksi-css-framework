@@ -5,13 +5,7 @@ togglers.forEach((toggler) => {
     const target = document.querySelector(targetString);
     if (target) {
       toggler.addEventListener("click", () => {
-        // console.log("height before:" + target.clientHeight);
         target.classList.toggle("show");
-        // console.log("height after:" + target.clientHeight);
-        target.style.height = `${target.clientHeight}px`;
-        target.addEventListener("transitionend", () => {
-          target.style = "";
-        });
       });
     }
   }
