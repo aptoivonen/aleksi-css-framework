@@ -1,2 +1,4 @@
 *.html
 *.css
+main.css
+main.min.css
