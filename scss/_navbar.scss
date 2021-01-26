@@ -27,6 +27,8 @@
 
         .navbar-collapse {
           display: flex !important;
+          flex-basis: auto;
+          flex-grow: 0;
         }
 
         .navbar-toggler {
