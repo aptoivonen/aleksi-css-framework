@@ -1,0 +1,21 @@
+.curriculum-card {
+  width: 270px;
+  height: 150px;
+}
+
+.curriculum-img {
+  --size: 80px;
+  width: var(--size);
+  height: var(--size);
+}
+
+@include media-breakpoint-up(sm) {
+  .curriculum-card {
+    width: 256px;
+    height: 256px;
+  }
+
+  .curriculum-img {
+    --size: 160px;
+  }
+}
