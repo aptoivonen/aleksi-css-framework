@@ -1,8 +1,12 @@
+@import "variables";
+
 @import "../framework/scss/main.scss";
 
 @import "util";
+@import "general";
 @import "nav";
 @import "hero";
 @import "howitworks";
 @import "learn-everything";
 @import "success-stories";
+@import "footer";

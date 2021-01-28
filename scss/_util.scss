@@ -5,30 +5,16 @@
   right: 0;
 }
 
-@include media-breakpoint-up(md) {
-  .position-md-static {
-    position: static;
-  }
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
 }
 
 .pt-70 {
   padding-top: 70px;
-}
-
-// Custom 'smaller' breakpoint 480px
-@media (min-width: 480px) {
-  .d-smaller-block {
-    display: block !important;
-  }
-
-  .px-smaller-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .mb-smaller-2 {
-    margin-bottom: 0.5rem !important;
-  }
 }
 
 .mw-80 {
@@ -67,8 +53,37 @@
   font-size: 2.25rem;
 }
 
+@include media-breakpoint-up(qs) {
+  .d-qs-block {
+    display: block !important;
+  }
+
+  .d-qs-flex {
+    display: flex !important;
+  }
+
+  .px-qs-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mb-qs-2 {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
 @include media-breakpoint-up(sm) {
   .font-size-sm-2-25 {
     font-size: 2.25rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .position-md-static {
+    position: static;
+  }
+
+  .flex-grow-md-2 {
+    flex-grow: 2 !important;
   }
 }

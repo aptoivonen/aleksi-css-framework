@@ -1,0 +1,10 @@
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+@include media-breakpoint-up(lg) {
+  .logo-img {
+    height: 70px;
+  }
+}
