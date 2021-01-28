@@ -1,3 +1,5 @@
+// Add some custom styles not found in the framework
+
 .position-fixed {
   position: fixed;
   top: 0;
@@ -5,8 +7,8 @@
   right: 0;
 }
 
-.flex-grow-1 {
-  flex-grow: 1 !important;
+.flex-1 {
+  flex: 1 !important;
 }
 
 .justify-content-around {
@@ -19,6 +21,10 @@
 
 .mw-80 {
   max-width: 80%;
+}
+
+.w-130 {
+  width: 130px;
 }
 
 .mb-70 {
@@ -83,7 +89,13 @@
     position: static;
   }
 
-  .flex-grow-md-2 {
-    flex-grow: 2 !important;
+  .flex-md-2 {
+    flex: 2 !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .font-size-lg-1-6 {
+    font-size: 1.6rem;
   }
 }

@@ -1,0 +1,20 @@
+.footer {
+  height: 70px;
+}
+
+@include media-breakpoint-up(qs) {
+  .footer {
+    height: 140px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .footer {
+    height: 277px;
+  }
+}
+
+.social-icon {
+  height: 24px;
+  width: auto;
+}
