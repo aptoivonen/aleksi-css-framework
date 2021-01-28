@@ -1,4 +1,1 @@
-*.html
-*.css
-main.css
-main.min.css
+node_modules
