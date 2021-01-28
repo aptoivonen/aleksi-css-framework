@@ -1,0 +1,30 @@
+{
+  "name": "aleksi-css-framework",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Aleksi CSS Framework</h3>",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass scss/style.scss css/style.css",
+    "build": "postcss css/style.css -o css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aptoivonen/aleksi-css-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aptoivonen/aleksi-css-framework/issues"
+  },
+  "homepage": "https://github.com/aptoivonen/aleksi-css-framework#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "autoprefixer": "^10.2.3",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "sass": "^1.32.5"
+  }
+}
