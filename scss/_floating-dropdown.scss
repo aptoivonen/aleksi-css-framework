@@ -1,0 +1,19 @@
+.floating-dropdown {
+  --size: 66px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: var(--size);
+  height: var(--size);
+
+  &:hover,
+  &:focus {
+    @extend .shadow-lg;
+  }
+}
+
+.floating-icon {
+  width: 36px;
+  height: auto;
+  fill: #fff;
+}
